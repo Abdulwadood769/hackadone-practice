@@ -1,0 +1,153 @@
+body{
+    background-color: rgb(30, 41, 59);
+    color: white;
+    Font-Family: 'Inter', sans-serif;
+}
+.h-1{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(129, 140, 248); 
+    text-shadow:2px 2px 2px rgb(129, 140, 248);
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.p-3{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0.5;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.container{
+    border: 2px solid rgb(12, 12, 30);
+    border-radius: 16px;
+    background-color: rgb(12, 12, 30);
+    width: 730px;
+    margin-left: 295px;
+    box-shadow: 6px 6px 6px rgb(12, 12, 30);
+    transition: transform 1s ease;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.container:hover{
+    box-shadow: 8px 8px 8px rgb(12, 12, 30);
+    transform: translateY(-8px);
+}
+.p-4{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.p-5{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-right: 75px;
+}
+.inline{
+    display: inline;
+}
+.container-1{
+    border: 2px solid rgb(12, 12, 30);
+    width: 300px;
+    height: 400px;
+    background-color:rgb(12,12,30) ;
+    border-radius: 16px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-top: 4px solid #6366f1;
+    transition: transform 1s ease;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.container-1:hover{
+    box-shadow: 2px 2px 2px #6366f1 ;
+    transform: translateY(-8px);
+}
+.container-2{
+    margin-left: 500px;
+    margin-top: -405px;
+    border: 2px solid rgb(12, 12, 30);
+    width: 300px;
+    height: 400px;
+    background-color:rgb(12,12,30) ;
+    border-radius: 16px;
+    border-top: 4px solid #6366f1;
+    transition: transform 1s ease;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.container-2:hover{
+    box-shadow: 2px 2px 2px #6366f1 ;
+    transform: translateY(-8px);
+}
+.container-3{
+    margin-left:950px;
+    margin-top: -405px;
+    border: 2px solid rgb(12, 12, 30);
+    width: 300px;
+    height: 400px;
+    background-color:rgb(12,12,30) ;
+    border-radius: 16px;
+    border-top: 4px solid #6366f1;
+    transition: transform 1s ease;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.container-3:hover{
+    box-shadow: 2px 2px 2px #6366f1 ;
+    transform: translateY(-8px);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .h-1 {
+        font-size: 48px;
+    }
+
+    .p-3 {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .container {
+        width: 85%;
+        margin: 20px auto;
+        box-shadow: 4px 4px 4px rgb(12, 12, 30);
+        padding: 15px;
+    }
+
+    .p-4, .p-5 {
+        font-size: 16px;
+        text-align: center;
+        margin-right: 0; 
+        line-height: 1.5;
+    }
+    .container-1, .container-2, .container-3 {
+        width: 280px; 
+        height: auto;
+        margin: 30px auto 0 auto;
+        padding: 20px;
+    }
+
+    .container-2, .container-3 {
+        margin-top: 30px;
+        margin-left: auto;
+    }
+    
+    .container-1 p, .container-2 p, .container-3 p {
+        font-size: 14px; 
+    }
+    
+    .container-1 svg, .container-2 svg, .container-3 svg {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+    }
+}
