@@ -1,0 +1,147 @@
+body{
+     background-color: rgb(30, 41, 59);
+    color: white;
+    Font-Family: 'Inter', sans-serif;
+}
+.h-1{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(129, 140, 248); 
+    text-shadow:2px 2px 2px rgb(129, 140, 248);
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.p-1{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0.5;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.name{
+    width: 400px;
+    height: 40px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.name:focus {
+     outline: none;
+     border-color:#6366f1;
+     box-shadow: 0 0 0 2px #6366f1; 
+}
+.email{
+    width: 400px;
+    height: 40px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #374151;
+    background-color: #1f2937;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.email:focus {
+     outline: none;
+     border-color:#6366f1;
+     box-shadow: 0 0 0 2px #6366f1;
+}
+.message{
+    width: 400px;
+    height: 150px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #1f2937;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #374151;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.message:focus {
+     outline: none;
+     border-color:#6366f1;
+     box-shadow: 0 0 0 2px #6366f1;
+        }
+.submit-button{
+    width: 415px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(99, 102, 241);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.submit-button:hover{
+    background-color: rgb(79, 70, 229);
+    box-shadow: 4px 4px 4px rgb(79, 70, 229);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    /* Main Heading */
+    .h-1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Sub-text Paragraph */
+    .p-1 {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* Contact Form Fields (name, email, message) and Button */
+    .name, .email, .message, .submit-button {
+        /* Use 90% width to fill most of the screen but leave some padding on the sides */
+        width: 90%; 
+        max-width: 400px; /* Ensure they don't get too wide on tablets */
+        margin-left: auto;
+        margin-right: auto;
+        /* For button, adjust width slightly to match inputs */
+    }
+    
+    .submit-button {
+        width: calc(90% + 15px); /* To make the button exactly match the width of the input fields + padding */
+        max-width: 415px;
+    }
+    .contact-form form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
