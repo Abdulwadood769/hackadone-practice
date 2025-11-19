@@ -94,6 +94,7 @@
 
 .bottom-1 {
     border-bottom: 1px solid blue;
+    padding-bottom:10px;
 }
 
 .heading {
@@ -246,4 +247,5 @@
         display: block; 
         text-align: left;
     }
+
 }
